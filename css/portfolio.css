@@ -68,6 +68,12 @@
     line-height: 1.17;
   } 
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
   .logo-header {
     font-family: Raleway;
     font-weight: 700;
@@ -190,9 +196,7 @@
     box-sizing: border-box;
     width: 370px;
     height: 404px;
-    border: 1px;
-    border: solid;
-    border-color: #eee;
+    border: 1px solid #eee;
 }
 
 portfolio-img {
