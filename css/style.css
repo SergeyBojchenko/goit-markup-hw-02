@@ -51,6 +51,16 @@
          url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
   }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
   .body {
     font-family: roboto, sans-serif;
     font-Weight: 400
