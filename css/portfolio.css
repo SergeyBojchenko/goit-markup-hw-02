@@ -50,7 +50,16 @@
          url('../fonts/roboto-v20-latin_cyrillic-900.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
   }
- 
+
+  :root {
+    --black: #212121;
+    --light-grey: #757575;
+    --blue: #2196F3;
+    --white: #ffffff;
+    --background-dark-grey: #2F303A;
+    --background-light-grey: #F5F4FA;
+}  
+
   html {
     box-sizing: border-box;
 }
@@ -68,6 +77,13 @@
     line-height: 1.17;
   } 
 
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+  }
+
 img {
     display: block;
     width: 100%;
@@ -81,53 +97,57 @@ img {
 }
 
 .header {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .logo-web {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .logo-studio {
-    color:#212121;
+    color: var(--black);
 }
 
 .link-contacts {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.17;
 }
 
 .link-contacts:hover {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 ..link-contacts:focus {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .link-menu {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.17;
 }
 
+.link-studia {
+    color: var(--blue);
+}
+
 .link-menu:hover {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-dark-grey);
 }
 
 .footer-link-map {
-    color: #fff;
+    color: var(--white);
 }
 
 .footer-link-map:hover {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .footer-link-contacts {
@@ -143,28 +163,34 @@ img {
 }
 
 .logo-studio-footer {
-    color: #fff;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
 }
 
 .link-categories {
-    display: inline-block;
-    background-color: #F5F4FA;
-    color: #212121;
+    background-color: var(--background-light-grey);
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.62;
+    border-width: 0px;
+    border-radius: 4px;
+
 }
 
 .link-categories:hover {
     display: inline-block;
-    background-color: #2196F3;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .link-categories:focus {
     display: inline-block;
-    background-color: #2196F3;
-    color: #fff;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .link-all {
@@ -205,32 +231,32 @@ portfolio-img {
 }
 
 .portfolio-heading {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 700;
     line-height: 2;
 }
 
 .portfolio-text {
-    color: #757575;
+    color: var(--light-grey);
     font-family: roboto;
     font-weight: 400;
     line-height: 1.87;
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-dark-grey);
 }
 
 .footer-link-map {
-    color: #fff;
+    color: var(--white);
     font-family: roboto;
     font-weight: 400;
     line-height: 1.17;
 }
 
 .footer-link-map:hover {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .footer-link-contacts {
@@ -249,7 +275,7 @@ portfolio-img {
 }
 
 .logo-studio-footer {
-    color: #fff;
+    color: var(--white);
 }
 
 .logo-footer {

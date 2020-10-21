@@ -51,6 +51,15 @@
          url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
   }
 
+:root {
+    --black: #212121;
+    --light-grey: #757575;
+    --blue: #2196F3;
+    --white: #ffffff;
+    --background-dark-grey: #2F303A;
+    --background-light-grey: #F5F4FA;
+}
+
 html {
     box-sizing: border-box;
 }
@@ -68,8 +77,25 @@ html {
     line-height: 1.17;
   }
 
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+ul {
+    list-style: none;
+}
+
 .header {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .logo-header {
@@ -81,126 +107,140 @@ html {
 
 
 .logo-web {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .logo-studio {
-    color:#212121;
+    color: var(--black);
 }
 
 .link-contacts {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.17;
 }
 
 .link-contacts:hover {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 ..link-contacts:focus {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .link-menu {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.17;
 }
 
+.link-studia {
+    color: var(--blue);
+}
+
 .link-menu:hover {
-    color:#2196F3;
+    color: var(--blue);
 }
 
 .service-order {
-    background-color:#2F303A;
+    background-color: var(--background-dark-grey);
 }
 
 .button {
     width: 200px;
     height: 50px;
-    background-color: #2196F3;
+    background-color: var(--blue);
     border: 0px;
 }
 
 .button-text {
-    color:#fff;
+    color: var(--white);
     font-family: roboto;
     font-weight: 700;
 }
 
 .service-order-text {
-    color: #fff;
+    color: var(--white);
     font-family: roboto;
     font-weight: 900;
     line-height: 1.36;
 }
 
 .description {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .description-heading {
-    color:#212121
+    color: var(--black);
     font-family: roboto;
     font-weight: 700;
     line-height: 1.17;
 }
 
 .description-text {
-    color: #757575;
+    color: var(--light-grey);
     font-family: roboto;
     font-weight: 400;
     line-height: 1.71;
 }
 
+.about-img {
+    width: 370px;
+    height: 294px;
+}
+
 .about-heading {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 700;
     line-height: 1.17;
 }
 
+.team-img {
+    width: 270px;
+    height: 260px;
+}
+
 .team {
-    background-color: #F5F4FA;
+    background-color: var(--background-light-grey);
 }
 
 .team-heading {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 700;
     line-height: 1.17;
 }
 
 .worker-name {
-    color: #212121;
+    color: var(--black);
     font-family: roboto;
     font-weight: 500;
     line-height: 1.17;
 }
 
 .worker-position {
-    color: #757575;
+    color: var(--light-grey);
     font-family: roboto;
     font-weight: 400;
     line-height: 1.17;
 }
 
 .footer {
-    background-color: #2F303A;
+    background-color: var(--background-dark-grey);
 }
 
 .footer-link-map {
-    color: #fff;
+    color: var(--white);
     font-family: roboto;
     font-weight: 400;
     line-height: 1.17;
 }
 
 .footer-link-map:hover {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .footer-link-contacts {
@@ -219,7 +259,7 @@ html {
 }
 
 .logo-studio-footer {
-    color: #fff;
+    color: var(--white);
 }
 
 .logo-footer {
